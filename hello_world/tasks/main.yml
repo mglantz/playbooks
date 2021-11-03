@@ -1,0 +1,10 @@
+---
+- name: Hello world
+  host: localhost
+  vars:
+    message: "world"
+  tasks:
+    - name: Provide message
+      debug:
+        msg: "hello {{ world }}"
+        
